@@ -22,4 +22,8 @@ public class NumberRange {
             throw new IllegalArgumentException("Value provided is lower than Lower");
         upper.set(val);
     }
+
+    public boolean isInRange(int val){
+        return lower.get() <= val && val >= upper.get();
+    }
 }
